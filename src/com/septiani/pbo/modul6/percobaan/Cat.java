@@ -1,0 +1,27 @@
+package com.septiani.pbo.modul6.percobaan;
+
+// Septiani Sari (20104082) //
+
+public class Cat extends Animal {
+    public String color = "";
+
+    public Cat(){}
+    public Cat(String name){
+        super(name);
+    }
+
+    public Cat(String name, int age){
+        super(name,age);
+    }
+
+    public Cat(String name, int age, String color){
+        super(name,age);
+        this.color = color;
+    }
+
+    public void walk(){
+        System.out.println(this.color + " " + this.name + "walks!");
+        System.out.println();
+    }
+
+}
